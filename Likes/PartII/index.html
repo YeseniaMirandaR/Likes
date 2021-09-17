@@ -1,0 +1,59 @@
+<!-- Recreate the website and make 3 different like buttons work -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Likes PartII</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="mainContainer">
+            <div class="netBar"> <!-- Network -->
+                <h1 class="network">Network</h1>
+            </div>
+            <h2 class="yourFeed">Your Feed</h2>
+            <!-- Left side -->
+            <div class="container1">
+                <div class="avatarContainer">
+                    <div class="avatar">
+                        <img class="avatarPhoto" src="user-circle.png" alt="user photo" height="150">
+                        <a href="https://octodex.github.com" class="avatarLink">Add an avatar</a>
+                        <p class="JamesDoe" ><strong>James Doe</strong></p>
+                    </div>
+                </div>
+                <!-- Right side -->
+                <div class="rightContainer">
+                    <div class="container2">
+                        <div class="someUserBox">
+                            <h3>Neil M</h3>
+                            <span id="likesNum1">9 likes(s)</span>
+                            <button class="likesButton" type="button" onclick="like(0)">Like</button> <!-- function like with array position in js-->
+                        </div>    
+                        <p class="fillerText">I just setup this new discord bot, let me know what you all think. <a href="https://www.ecosia.org/">link</a></p>
+                    </div>
+                    <div class="container2">
+                        <div class="someUserBox">
+                            <h3>Nichole K</h3>
+                            <span id="likesNum2">12 like(s)</span>
+                            <button class="likesButton" type="button" onclick="like(1)">Like</button> <!-- function like with array position in js-->
+                        </div>
+                        <p class="fillerText">Just finished my <a href="https://www.ecosia.org/">next comic</a>, check it out</p>
+                    </div>
+                    <div class="container2">
+                        <div class="someUserBox">
+                            <h3>Jim R</h3>
+                            <span id="likesNum3">9 likes(s)</span>
+                            <button class="likesButton" type="button" onclick="like(2)">Like</button> <!-- function like with array postion in js-->
+                        </div>    
+                        <p class="fillerText">I can't stop listening to the <a href="https://www.ecosia.org/"> new album</a>. Who else is liking it?</p>
+                    </div>
+                </div>
+            </div>    
+        </div>    
+        <script src="script.js"></script>
+    </body>
+</html>
